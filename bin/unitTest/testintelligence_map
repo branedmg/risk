@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_07" class="java.beans.XMLDecoder"> 
+ <object class="org.jgraph.graph.GraphLayoutCache"> 
+  <object class="org.jgraph.graph.DefaultGraphModel"> 
+   <object class="java.util.ArrayList"> 
+    <void method="add"> 
+     <object id="DefaultGraphCell0" class="org.jgraph.graph.DefaultGraphCell"> 
+      <object class="map.Map"> 
+       <void property="countries"> 
+        <void property="countries"> 
+         <void method="add"> 
+          <object id="Country0" class="map.Country"> 
+           <void property="color"> 
+            <object id="Color0" class="java.awt.Color"> 
+             <int>153</int> 
+             <int>153</int> 
+             <int>0</int> 
+             <int>255</int> 
+            </object> 
+           </void> 
+           <void property="name"> 
+            <string>Africa</string> 
+           </void> 
+           <void property="states"> 
+            <void method="add"> 
+             <object id="State0" class="map.State"> 
+              <void property="country"> 
+               <object idref="Country0"/> 
+              </void> 
+              <void property="name"> 
+               <string>Egypt</string> 
+              </void> 
+              <void property="population"> 
+               <int>70</int> 
+              </void> 
+              <void property="soldiers"> 
+               <int>10</int> 
+              </void> 
+             </object> 
+            </void> 
+            <void method="add"> 
+             <object id="State1" class="map.State"> 
+              <void property="country"> 
+               <object idref="Country0"/> 
+              </void> 
+              <void property="name"> 
+               <string>East Africa</string> 
+              </void> 
+              <void property="population"> 
+               <int>100</int> 
+              </void> 
+              <void property="soldiers"> 
+               <int>20</int> 
+              </void> 
+              <void property="tanks"> 
+               <int>2</int> 
+              </void> 
+             </object> 
+            </void> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object id="Country1" class="map.Country"> 
+           <void property="color"> 
+            <object id="Color1" class="java.awt.Color"> 
+             <int>0</int> 
+             <int>153</int> 
+             <int>0</int> 
+             <int>255</int> 
+            </object> 
+           </void> 
+           <void property="name"> 
+            <string>Asia</string> 
+           </void> 
+           <void property="states"> 
+            <void method="add"> 
+             <object id="State2" class="map.State"> 
+              <void property="country"> 
+               <object idref="Country1"/> 
+              </void> 
+              <void property="name"> 
+               <string>Afghanistan</string> 
+              </void> 
+              <void property="population"> 
+               <int>100</int> 
+              </void> 
+              <void property="soldiers"> 
+               <int>20</int> 
+              </void> 
+             </object> 
+            </void> 
+            <void method="add"> 
+             <object id="State3" class="map.State"> 
+              <void property="country"> 
+               <object idref="Country1"/> 
+              </void> 
+              <void property="name"> 
+               <string>India</string> 
+              </void> 
+              <void property="population"> 
+               <int>700</int> 
+              </void> 
+              <void property="soldiers"> 
+               <int>80</int> 
+              </void> 
+              <void property="tanks"> 
+               <int>3</int> 
+              </void> 
+              <void property="techLevel"> 
+               <object class="map.State$TechLevel" method="valueOf"> 
+                <string>high</string> 
+               </object> 
+              </void> 
+             </object> 
+            </void> 
+            <void method="add"> 
+             <object id="State4" class="map.State"> 
+              <void property="country"> 
+               <object idref="Country1"/> 
+              </void> 
+              <void property="name"> 
+               <string>Middle East</string> 
+              </void> 
+              <void property="population"> 
+               <int>200</int> 
+              </void> 
+              <void property="soldiers"> 
+               <int>40</int> 
+              </void> 
+              <void property="tanks"> 
+               <int>2</int> 
+              </void> 
+             </object> 
+            </void> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+       </void> 
+      </object> 
+      <void property="attributes"> 
+       <void method="put"> 
+        <string>selectable</string> 
+        <boolean>false</boolean> 
+       </void> 
+       <void method="put"> 
+        <string>editable</string> 
+        <boolean>false</boolean> 
+       </void> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object id="DefaultGraphCell1" class="org.jgraph.graph.DefaultGraphCell"> 
+      <object idref="State0"/> 
+      <void method="add"> 
+       <object id="DefaultPort0" class="org.jgraph.graph.DefaultPort"> 
+        <null/> 
+        <void id="HashSet0" property="edges"> 
+         <void method="add"> 
+          <object id="DefaultEdge0" class="org.jgraph.graph.DefaultEdge"> 
+           <null/> 
+           <void property="source"> 
+            <object id="DefaultPort1" class="org.jgraph.graph.DefaultPort"> 
+             <null/> 
+             <void id="HashSet1" property="edges"> 
+              <void method="add"> 
+               <object id="DefaultEdge1" class="org.jgraph.graph.DefaultEdge"> 
+                <null/> 
+                <void property="source"> 
+                 <object id="DefaultPort2" class="org.jgraph.graph.DefaultPort"> 
+                  <null/> 
+                  <void id="HashSet2" property="edges"> 
+                   <void method="add"> 
+                    <object idref="DefaultEdge1"/> 
+                   </void> 
+                   <void method="add"> 
+                    <object id="DefaultEdge2" class="org.jgraph.graph.DefaultEdge"> 
+                     <null/> 
+                     <void property="source"> 
+                      <object idref="DefaultPort2"/> 
+                     </void> 
+                     <void property="target"> 
+                      <object id="DefaultPort3" class="org.jgraph.graph.DefaultPort"> 
+                       <null/> 
+                       <void id="HashSet3" property="edges"> 
+                        <void method="add"> 
+                         <object id="DefaultEdge3" class="org.jgraph.graph.DefaultEdge"> 
+                          <null/> 
+                          <void property="source"> 
+                           <object idref="DefaultPort1"/> 
+                          </void> 
+                          <void property="target"> 
+                           <object idref="DefaultPort3"/> 
+                          </void> 
+                         </object> 
+                        </void> 
+                        <void method="add"> 
+                         <object idref="DefaultEdge2"/> 
+                        </void> 
+                       </void> 
+                       <void property="edges"> 
+                        <object idref="HashSet3"/> 
+                       </void> 
+                      </object> 
+                     </void> 
+                    </object> 
+                   </void> 
+                  </void> 
+                  <void property="edges"> 
+                   <object idref="HashSet2"/> 
+                  </void> 
+                 </object> 
+                </void> 
+                <void property="target"> 
+                 <object idref="DefaultPort1"/> 
+                </void> 
+               </object> 
+              </void> 
+              <void method="add"> 
+               <object idref="DefaultEdge0"/> 
+              </void> 
+              <void method="add"> 
+               <object idref="DefaultEdge3"/> 
+              </void> 
+              <void method="add"> 
+               <object id="DefaultEdge4" class="org.jgraph.graph.DefaultEdge"> 
+                <null/> 
+                <void property="source"> 
+                 <object id="DefaultPort4" class="org.jgraph.graph.DefaultPort"> 
+                  <null/> 
+                  <void id="HashSet4" property="edges"> 
+                   <void method="add"> 
+                    <object id="DefaultEdge5" class="org.jgraph.graph.DefaultEdge"> 
+                     <null/> 
+                     <void property="source"> 
+                      <object idref="DefaultPort4"/> 
+                     </void> 
+                     <void property="target"> 
+                      <object idref="DefaultPort0"/> 
+                     </void> 
+                    </object> 
+                   </void> 
+                   <void method="add"> 
+                    <object idref="DefaultEdge4"/> 
+                   </void> 
+                  </void> 
+                  <void property="edges"> 
+                   <object idref="HashSet4"/> 
+                  </void> 
+                 </object> 
+                </void> 
+                <void property="target"> 
+                 <object idref="DefaultPort1"/> 
+                </void> 
+               </object> 
+              </void> 
+             </void> 
+             <void property="edges"> 
+              <object idref="HashSet1"/> 
+             </void> 
+            </object> 
+           </void> 
+           <void property="target"> 
+            <object idref="DefaultPort0"/> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object idref="DefaultEdge5"/> 
+         </void> 
+        </void> 
+        <void property="edges"> 
+         <object idref="HashSet0"/> 
+        </void> 
+       </object> 
+      </void> 
+      <void property="attributes"> 
+       <void method="put"> 
+        <string>bounds</string> 
+        <object class="org.jgraph.graph.AttributeMap$SerializableRectangle2D"> 
+         <void property="height"> 
+          <double>30.0</double> 
+         </void> 
+         <void property="width"> 
+          <double>131.0</double> 
+         </void> 
+         <void property="x"> 
+          <double>21.0</double> 
+         </void> 
+         <void property="y"> 
+          <double>177.0</double> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="put"> 
+        <string>backgroundColor</string> 
+        <object idref="Color0"/> 
+       </void> 
+       <void method="put"> 
+        <string>editable</string> 
+        <boolean>false</boolean> 
+       </void> 
+       <void method="put"> 
+        <string>opaque</string> 
+        <boolean>true</boolean> 
+       </void> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object id="DefaultGraphCell2" class="org.jgraph.graph.DefaultGraphCell"> 
+      <object idref="State1"/> 
+      <void method="add"> 
+       <object idref="DefaultPort4"/> 
+      </void> 
+      <void property="attributes"> 
+       <void method="put"> 
+        <string>bounds</string> 
+        <object class="org.jgraph.graph.AttributeMap$SerializableRectangle2D"> 
+         <void property="height"> 
+          <double>30.0</double> 
+         </void> 
+         <void property="width"> 
+          <double>143.0</double> 
+         </void> 
+         <void property="x"> 
+          <double>103.0</double> 
+         </void> 
+         <void property="y"> 
+          <double>246.0</double> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="put"> 
+        <string>backgroundColor</string> 
+        <object idref="Color0"/> 
+       </void> 
+       <void method="put"> 
+        <string>editable</string> 
+        <boolean>false</boolean> 
+       </void> 
+       <void method="put"> 
+        <string>opaque</string> 
+        <boolean>true</boolean> 
+       </void> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object id="DefaultGraphCell3" class="org.jgraph.graph.DefaultGraphCell"> 
+      <object idref="State2"/> 
+      <void method="add"> 
+       <object idref="DefaultPort2"/> 
+      </void> 
+      <void property="attributes"> 
+       <void method="put"> 
+        <string>bounds</string> 
+        <object class="org.jgraph.graph.AttributeMap$SerializableRectangle2D"> 
+         <void property="height"> 
+          <double>32.0</double> 
+         </void> 
+         <void property="width"> 
+          <double>166.0</double> 
+         </void> 
+         <void property="x"> 
+          <double>302.0</double> 
+         </void> 
+         <void property="y"> 
+          <double>108.0</double> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="put"> 
+        <string>backgroundColor</string> 
+        <object idref="Color1"/> 
+       </void> 
+       <void method="put"> 
+        <string>editable</string> 
+        <boolean>false</boolean> 
+       </void> 
+       <void method="put"> 
+        <string>opaque</string> 
+        <boolean>true</boolean> 
+       </void> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object id="DefaultGraphCell4" class="org.jgraph.graph.DefaultGraphCell"> 
+      <object idref="State3"/> 
+      <void method="add"> 
+       <object idref="DefaultPort3"/> 
+      </void> 
+      <void property="attributes"> 
+       <void method="put"> 
+        <string>bounds</string> 
+        <object class="org.jgraph.graph.AttributeMap$SerializableRectangle2D"> 
+         <void property="height"> 
+          <double>30.0</double> 
+         </void> 
+         <void property="width"> 
+          <double>141.0</double> 
+         </void> 
+         <void property="x"> 
+          <double>439.0</double> 
+         </void> 
+         <void property="y"> 
+          <double>176.0</double> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="put"> 
+        <string>backgroundColor</string> 
+        <object idref="Color1"/> 
+       </void> 
+       <void method="put"> 
+        <string>editable</string> 
+        <boolean>false</boolean> 
+       </void> 
+       <void method="put"> 
+        <string>opaque</string> 
+        <boolean>true</boolean> 
+       </void> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object id="DefaultGraphCell5" class="org.jgraph.graph.DefaultGraphCell"> 
+      <object idref="State4"/> 
+      <void method="add"> 
+       <object idref="DefaultPort1"/> 
+      </void> 
+      <void property="attributes"> 
+       <void method="put"> 
+        <string>bounds</string> 
+        <object class="org.jgraph.graph.AttributeMap$SerializableRectangle2D"> 
+         <void property="height"> 
+          <double>30.0</double> 
+         </void> 
+         <void property="width"> 
+          <double>166.0</double> 
+         </void> 
+         <void property="x"> 
+          <double>215.0</double> 
+         </void> 
+         <void property="y"> 
+          <double>176.0</double> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="put"> 
+        <string>backgroundColor</string> 
+        <object idref="Color1"/> 
+       </void> 
+       <void method="put"> 
+        <string>editable</string> 
+        <boolean>false</boolean> 
+       </void> 
+       <void method="put"> 
+        <string>opaque</string> 
+        <boolean>true</boolean> 
+       </void> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object idref="DefaultEdge0"/> 
+    </void> 
+    <void method="add"> 
+     <object idref="DefaultEdge1"/> 
+    </void> 
+    <void method="add"> 
+     <object idref="DefaultEdge2"/> 
+    </void> 
+    <void method="add"> 
+     <object idref="DefaultEdge5"/> 
+    </void> 
+    <void method="add"> 
+     <object idref="DefaultEdge4"/> 
+    </void> 
+    <void method="add"> 
+     <object idref="DefaultEdge3"/> 
+    </void> 
+   </object> 
+   <object class="org.jgraph.graph.AttributeMap"/> 
+  </object> 
+  <object class="org.jgraph.graph.DefaultCellViewFactory"/> 
+  <array class="org.jgraph.graph.CellView" length="16"> 
+   <void index="0"> 
+    <object class="org.jgraph.graph.EdgeView"> 
+     <void property="cell"> 
+      <object idref="DefaultEdge2"/> 
+     </void> 
+     <void property="source"> 
+      <object id="PortView0" class="org.jgraph.graph.PortView"> 
+       <void property="cell"> 
+        <object idref="DefaultPort2"/> 
+       </void> 
+      </object> 
+     </void> 
+     <void property="target"> 
+      <object id="PortView1" class="org.jgraph.graph.PortView"> 
+       <void property="cell"> 
+        <object idref="DefaultPort3"/> 
+       </void> 
+      </object> 
+     </void> 
+    </object> 
+   </void> 
+   <void index="1"> 
+    <object class="org.jgraph.graph.EdgeView"> 
+     <void property="cell"> 
+      <object idref="DefaultEdge3"/> 
+     </void> 
+     <void property="source"> 
+      <object id="PortView2" class="org.jgraph.graph.PortView"> 
+       <void property="cell"> 
+        <object idref="DefaultPort1"/> 
+       </void> 
+      </object> 
+     </void> 
+     <void property="target"> 
+      <object idref="PortView1"/> 
+     </void> 
+    </object> 
+   </void> 
+   <void index="2"> 
+    <object idref="PortView1"/> 
+   </void> 
+   <void index="3"> 
+    <object class="org.jgraph.graph.EdgeView"> 
+     <void property="cell"> 
+      <object idref="DefaultEdge4"/> 
+     </void> 
+     <void property="source"> 
+      <object id="PortView3" class="org.jgraph.graph.PortView"> 
+       <void property="cell"> 
+        <object idref="DefaultPort4"/> 
+       </void> 
+      </object> 
+     </void> 
+     <void property="target"> 
+      <object idref="PortView2"/> 
+     </void> 
+    </object> 
+   </void> 
+   <void index="4"> 
+    <object idref="PortView2"/> 
+   </void> 
+   <void index="5"> 
+    <object class="org.jgraph.graph.EdgeView"> 
+     <void property="cell"> 
+      <object idref="DefaultEdge1"/> 
+     </void> 
+     <void property="source"> 
+      <object idref="PortView0"/> 
+     </void> 
+     <void property="target"> 
+      <object idref="PortView2"/> 
+     </void> 
+    </object> 
+   </void> 
+   <void index="6"> 
+    <object class="org.jgraph.graph.EdgeView"> 
+     <void property="cell"> 
+      <object idref="DefaultEdge0"/> 
+     </void> 
+     <void property="source"> 
+      <object idref="PortView2"/> 
+     </void> 
+     <void property="target"> 
+      <object id="PortView4" class="org.jgraph.graph.PortView"> 
+       <void property="cell"> 
+        <object idref="DefaultPort0"/> 
+       </void> 
+      </object> 
+     </void> 
+    </object> 
+   </void> 
+   <void index="7"> 
+    <object idref="PortView0"/> 
+   </void> 
+   <void index="8"> 
+    <object class="org.jgraph.graph.VertexView"> 
+     <void property="bounds"> 
+      <object id="AttributeMap$SerializableRectangle2D0" class="org.jgraph.graph.AttributeMap$SerializableRectangle2D"> 
+       <void property="height"> 
+        <double>30.0</double> 
+       </void> 
+       <void property="width"> 
+        <double>131.0</double> 
+       </void> 
+       <void property="x"> 
+        <double>21.0</double> 
+       </void> 
+       <void property="y"> 
+        <double>177.0</double> 
+       </void> 
+      </object> 
+     </void> 
+     <void property="cachedBounds"> 
+      <object idref="AttributeMap$SerializableRectangle2D0"/> 
+     </void> 
+     <void property="cell"> 
+      <object idref="DefaultGraphCell1"/> 
+     </void> 
+    </object> 
+   </void> 
+   <void index="9"> 
+    <object class="org.jgraph.graph.VertexView"> 
+     <void property="bounds"> 
+      <object id="AttributeMap$SerializableRectangle2D1" class="org.jgraph.graph.AttributeMap$SerializableRectangle2D"> 
+       <void property="height"> 
+        <double>30.0</double> 
+       </void> 
+       <void property="width"> 
+        <double>166.0</double> 
+       </void> 
+       <void property="x"> 
+        <double>215.0</double> 
+       </void> 
+       <void property="y"> 
+        <double>176.0</double> 
+       </void> 
+      </object> 
+     </void> 
+     <void property="cachedBounds"> 
+      <object idref="AttributeMap$SerializableRectangle2D1"/> 
+     </void> 
+     <void property="cell"> 
+      <object idref="DefaultGraphCell5"/> 
+     </void> 
+    </object> 
+   </void> 
+   <void index="10"> 
+    <object class="org.jgraph.graph.VertexView"> 
+     <void property="bounds"> 
+      <object id="AttributeMap$SerializableRectangle2D2" class="org.jgraph.graph.AttributeMap$SerializableRectangle2D"> 
+       <void property="height"> 
+        <double>32.0</double> 
+       </void> 
+       <void property="width"> 
+        <double>166.0</double> 
+       </void> 
+       <void property="x"> 
+        <double>302.0</double> 
+       </void> 
+       <void property="y"> 
+        <double>108.0</double> 
+       </void> 
+      </object> 
+     </void> 
+     <void property="cachedBounds"> 
+      <object idref="AttributeMap$SerializableRectangle2D2"/> 
+     </void> 
+     <void property="cell"> 
+      <object idref="DefaultGraphCell3"/> 
+     </void> 
+    </object> 
+   </void> 
+   <void index="11"> 
+    <object class="org.jgraph.graph.VertexView"> 
+     <void property="bounds"> 
+      <object id="AttributeMap$SerializableRectangle2D3" class="org.jgraph.graph.AttributeMap$SerializableRectangle2D"> 
+       <void property="height"> 
+        <double>30.0</double> 
+       </void> 
+       <void property="width"> 
+        <double>141.0</double> 
+       </void> 
+       <void property="x"> 
+        <double>439.0</double> 
+       </void> 
+       <void property="y"> 
+        <double>176.0</double> 
+       </void> 
+      </object> 
+     </void> 
+     <void property="cachedBounds"> 
+      <object idref="AttributeMap$SerializableRectangle2D3"/> 
+     </void> 
+     <void property="cell"> 
+      <object idref="DefaultGraphCell4"/> 
+     </void> 
+    </object> 
+   </void> 
+   <void index="12"> 
+    <object idref="PortView4"/> 
+   </void> 
+   <void index="13"> 
+    <object class="org.jgraph.graph.VertexView"> 
+     <void property="bounds"> 
+      <object id="AttributeMap$SerializableRectangle2D4" class="org.jgraph.graph.AttributeMap$SerializableRectangle2D"> 
+       <void property="height"> 
+        <double>30.0</double> 
+       </void> 
+       <void property="width"> 
+        <double>143.0</double> 
+       </void> 
+       <void property="x"> 
+        <double>103.0</double> 
+       </void> 
+       <void property="y"> 
+        <double>246.0</double> 
+       </void> 
+      </object> 
+     </void> 
+     <void property="cachedBounds"> 
+      <object idref="AttributeMap$SerializableRectangle2D4"/> 
+     </void> 
+     <void property="cell"> 
+      <object idref="DefaultGraphCell2"/> 
+     </void> 
+    </object> 
+   </void> 
+   <void index="14"> 
+    <object idref="PortView3"/> 
+   </void> 
+   <void index="15"> 
+    <object class="org.jgraph.graph.EdgeView"> 
+     <void property="cell"> 
+      <object idref="DefaultEdge5"/> 
+     </void> 
+     <void property="source"> 
+      <object idref="PortView3"/> 
+     </void> 
+     <void property="target"> 
+      <object idref="PortView4"/> 
+     </void> 
+    </object> 
+   </void> 
+  </array> 
+  <array class="org.jgraph.graph.CellView" length="1"> 
+   <void index="0"> 
+    <object class="org.jgraph.graph.VertexView"> 
+     <void property="bounds"> 
+      <object id="AttributeMap$SerializableRectangle2D5" class="org.jgraph.graph.AttributeMap$SerializableRectangle2D"> 
+       <void property="height"> 
+        <double>20.0</double> 
+       </void> 
+       <void property="width"> 
+        <double>20.0</double> 
+       </void> 
+       <void property="x"> 
+        <double>10.0</double> 
+       </void> 
+       <void property="y"> 
+        <double>10.0</double> 
+       </void> 
+      </object> 
+     </void> 
+     <void property="cachedBounds"> 
+      <object idref="AttributeMap$SerializableRectangle2D5"/> 
+     </void> 
+     <void property="cell"> 
+      <object idref="DefaultGraphCell0"/> 
+     </void> 
+    </object> 
+   </void> 
+  </array> 
+  <boolean>true</boolean> 
+  <void property="visibleSet"> 
+   <void method="clear"/> 
+   <void method="add"> 
+    <object idref="DefaultEdge1"/> 
+   </void> 
+   <void method="add"> 
+    <object idref="DefaultPort2"/> 
+   </void> 
+   <void method="add"> 
+    <object idref="DefaultEdge0"/> 
+   </void> 
+   <void method="add"> 
+    <object idref="DefaultPort3"/> 
+   </void> 
+   <void method="add"> 
+    <object idref="DefaultGraphCell4"/> 
+   </void> 
+   <void method="add"> 
+    <object idref="DefaultPort0"/> 
+   </void> 
+   <void method="add"> 
+    <object idref="DefaultEdge3"/> 
+   </void> 
+   <void method="add"> 
+    <object idref="DefaultPort4"/> 
+   </void> 
+   <void method="add"> 
+    <object idref="DefaultGraphCell1"/> 
+   </void> 
+   <void method="add"> 
+    <object idref="DefaultGraphCell5"/> 
+   </void> 
+   <void method="add"> 
+    <object idref="DefaultGraphCell3"/> 
+   </void> 
+   <void method="add"> 
+    <object idref="DefaultEdge5"/> 
+   </void> 
+   <void method="add"> 
+    <object idref="DefaultEdge2"/> 
+   </void> 
+   <void method="add"> 
+    <object idref="DefaultGraphCell2"/> 
+   </void> 
+   <void method="add"> 
+    <object idref="DefaultPort1"/> 
+   </void> 
+   <void method="add"> 
+    <object idref="DefaultEdge4"/> 
+   </void> 
+  </void> 
+ </object> 
+</java> 
